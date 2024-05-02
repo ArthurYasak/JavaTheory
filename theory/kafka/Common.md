@@ -5,6 +5,7 @@ KafkaTrmplate позволяет отправлять сообщения из п
 
     @Autowired
     private final KafkaTemplate<Long, String> kafkaTemplate;
+    
     public void sendMessage(String msg) {
         kafkaTemplate.send(kafkaTopic, msg);
     }
