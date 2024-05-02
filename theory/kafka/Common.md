@@ -3,11 +3,11 @@
 Отправка сообщений.
 KafkaTrmplate позволяет отправлять сообщения из продюсера:
 
-    `@Autowired`
+    @Autowired
     
-    `private final KafkaTemplate<Long, String> kafkaTemplate;`
+    private final KafkaTemplate<Long, String> kafkaTemplate;
     
-    `public void sendMessage(String msg) {`
+    public void sendMessage(String msg) {
 
         kafkaTemplate.send(kafkaTopic, msg);
     
