@@ -1,6 +1,6 @@
-Start keycloak server:
+Start keycloak server on Windows (keycloak bin folder added to Path):
 
-
+    kc.bat start-dev --http-port 8180
 
 Keycloak flow:
 
