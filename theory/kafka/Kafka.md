@@ -1,7 +1,7 @@
 В Kafka в отличие от RabbitMQ данные можно прочитать 2 раза, используя offset(смещение по очереди).
 
 Отправка сообщений.
-KafkaTrmplate позволяет отправлять сообщения из продюсера:
+KafkaTemplate позволяет отправлять сообщения из продюсера:
 
     @Autowired
     private final KafkaTemplate<Long, String> kafkaTemplate;
