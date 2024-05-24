@@ -6,6 +6,8 @@ Keycloak flow:
 
 ![Keycloak_flow](https://github.com/ArthurYasak/JavaTheory/raw/main/images/Keycloak_flow.png)
 
+![Keycloak_flow_simple_with_front](https://github.com/ArthurYasak/JavaTheory/raw/main/images/Keycloak_flow_simple_with_front.webp)
+
 How to add keycloak in java-project:
 
 In pom.xml:
