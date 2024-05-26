@@ -99,3 +99,4 @@ Configuration class (but in my case server works without this class):
 Send request with Postman:
 
 ![Keycloak_with_postman](https://github.com/ArthurYasak/JavaTheory/blob/main/images/Keycloak_with_postman.png)
+![Obtain_access_tokenn](https://github.com/ArthurYasak/JavaTheory/blob/main/images/Obtain_access_token.png)
