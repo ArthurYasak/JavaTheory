@@ -95,3 +95,7 @@ Configuration class (but in my case server works without this class):
             return JwtDecoders.fromIssuerLocation(issuerUrl);
         }
     }
+
+Send request with Postman:
+
+![Keycloak_with_postman](https://github.com/ArthurYasak/JavaTheory/blob/main/images/Keycloak_with_postman.png)
