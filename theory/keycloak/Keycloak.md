@@ -100,3 +100,4 @@ Send request with Postman:
 
 ![Keycloak_with_postman](https://github.com/ArthurYasak/JavaTheory/blob/main/images/Keycloak_with_postman.png)
 ![Obtain_access_tokenn](https://github.com/ArthurYasak/JavaTheory/blob/main/images/Obtain_access_token.png)
+![Get_token_in_Postman](https://github.com/ArthurYasak/JavaTheory/blob/6564500d91b7e59837b01419adb0faf2cd4c2358/images/Get_token_in_Postman.png)
