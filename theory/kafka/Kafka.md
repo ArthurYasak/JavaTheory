@@ -1,5 +1,22 @@
 В Kafka в отличие от RabbitMQ данные можно прочитать 2 раза, используя offset(смещение по очереди).
 
+Kafka base configuration:
+
+    @Configuration
+    public class KafkaConfiguration {
+
+        @Value("${spring.kafka.template.default-topic}")
+        private String kafkaTopic;
+    
+        @Bean
+        public NewTopic newTopic() {
+    
+            return new NewTopic(
+                    kafkaTopic, 1, (short) 1
+            );
+        }
+    }
+
 Отправка сообщений.
 KafkaTemplate позволяет отправлять сообщения из продюсера:
 
