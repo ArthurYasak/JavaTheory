@@ -17,6 +17,11 @@ Kafka base configuration:
         }
     }
 
+In application.properties:
+
+    spring.kafka.bootstrap-servers=localhost:9092
+    spring.kafka.template.default-topic=service-log
+
 Отправка сообщений.
 KafkaTemplate позволяет отправлять сообщения из продюсера:
 
@@ -31,8 +36,9 @@ KafkaTemplate позволяет отправлять сообщения из п
 
     @Configuration
     public class KafkaProducerConfig {
-    
-        private String kafkaServer="localhost:9092";
+
+        @Value("${spring.kafka.bootstrap-servers}")
+        private String kafkaServer;
     
         @Bean
         public Map<String, Object> producerConfigs() {
