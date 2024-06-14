@@ -22,6 +22,13 @@ In application.properties:
     spring.kafka.bootstrap-servers=localhost:9092
     spring.kafka.template.default-topic=service-log
 
+In pom.xml:
+
+    <dependency>
+        <groupId>org.springframework.kafka</groupId>
+        <artifactId>spring-kafka</artifactId>
+    </dependency>
+
 Отправка сообщений.
 KafkaTemplate позволяет отправлять сообщения из продюсера:
 
