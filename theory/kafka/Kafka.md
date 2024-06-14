@@ -12,15 +12,15 @@ Kafka base configuration:
         public NewTopic newTopic() {
     
             return new NewTopic(
-                    kafkaTopic, 1, (short) 1
+                    kafkaTopic, 1, (short) 1    // String name, int numOfPartitions, short replicationFactor 
             );
         }
     }
 
 In application.properties:
 
-    spring.kafka.bootstrap-servers=localhost:9092
-    spring.kafka.template.default-topic=service-log
+    spring.kafka.bootstrap-servers=localhost:9092    // host and kafka port
+    spring.kafka.template.default-topic=service-log    //name of topic
 
 In pom.xml:
 
