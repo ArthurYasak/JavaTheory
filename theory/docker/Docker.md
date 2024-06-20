@@ -14,7 +14,7 @@ Dockerfile with server app:
     ENTRYPOINT ["java", "-jar", "app.jar"]
 
 To create executable .jar file you need spring-boot-maven-plugin: 
-
+```xml
     <build>
         <plugins>
             <plugin>
@@ -31,10 +31,10 @@ To create executable .jar file you need spring-boot-maven-plugin:
             </plugin>
         </plugins>
     </build>
-
+```
 Compose.yaml file with volume to store database data when container will delete:
-
-    services:
+```yaml
+  services:
     credit-service:
       build:
         context: .
@@ -57,3 +57,4 @@ Compose.yaml file with volume to store database data when container will delete:
         POSTGRES_PASSWORD: 75sdQL57
     volumes:
       postgres-data:
+```
