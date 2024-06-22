@@ -29,3 +29,9 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
 ```
+LISTENERS are what interfaces Kafka binds to. ADVERTISED_LISTENERS are how clients can connect.
+### On application.properties:
+```properties
+spring.kafka.bootstrap-servers=kafka:19092
+spring.kafka.template.default-topic=service-log
+```
