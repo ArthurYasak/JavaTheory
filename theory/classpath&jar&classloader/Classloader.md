@@ -16,13 +16,15 @@ https://javarush.com/groups/posts/646-kak-proiskhodit-zagruzka-klassov-v-jvm
 
 3. инициализация полученного объекта
 
+![Loading](https://github.com/ArthurYasak/JavaTheory/blob/3c7933f4e7cca00ea7003ae1442bc78ed4ea004f/images/classpath%26jar%26classloader/Loading.png)
+
 ### Типы загрузчиков Java
 В Java существует три стандартных загрузчика, каждый из которых осуществляет загрузку класса из определенного места:
 - Bootstrap – базовый загрузчик, также называется Primordial ClassLoader.
 
 загружает стандартные классы JDK из архива rt.jar
 
-- Extension ClassLoader – загрузчик расширений.
+- Platform (Extension) ClassLoader – загрузчик расширений.
 
 загружает классы расширений, которые по умолчанию находятся в каталоге jre/lib/ext, но могут быть заданы системным свойством java.ext.dirs
 
