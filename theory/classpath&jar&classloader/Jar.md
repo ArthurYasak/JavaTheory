@@ -6,7 +6,7 @@ A jar file is simply a type of archive used to package java class files and asso
   
 javac path\to\java\Class.java path\to\another\Class.java -d target\
 
-- Create JAR (c - create; f - file; m - manifest; -C - (2 parameters) directory or file, path to put it in jar:
+- Create JAR (c - create; f - file; m - manifest; -C - (2 parameters) Change to the specified directory and include the following file:
 
 jar -cfm fileName.jar MANIFEST.MF(txt) -C target\ . src\main\resources\ .
 
