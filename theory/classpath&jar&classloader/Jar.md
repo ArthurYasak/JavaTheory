@@ -1,6 +1,19 @@
 ## What is jar-file?
 A jar file is simply a type of archive used to package java class files and associated resources for distribution.
 
+### Create jar file by hand.
+- Compile all java classes to new directory (ex. target\):
+  
+javac path\to\java\Class.java path\to\another\Class.java -d target\
+
+- Create JAR (c - create; f - file; m - manifest; -C - (2 parameters) directory or file, path to put it in jar:
+
+jar -cfm fileName.jar MANIFEST.MF(txt) -C target\ . src\main\resources\ .
+
+- Launch jar:
+
+java -jar fileName.jar
+
 ### From Spring Boot Maven Plugin documentation(https://docs.spring.io/spring-boot/docs/2.3.0.RELEASE/maven-plugin/reference/html/):
 ## Packaging Executable Archives
 The plugin can create executable archives (jar files and war files) that contain all of an application’s dependencies and can then be run with java -jar.
