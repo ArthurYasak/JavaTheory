@@ -1,7 +1,9 @@
 ## What is jar-file?
 A jar file is simply a type of archive used to package java class files and associated resources for distribution.
 
-### Create jar file by hand.
+### Create jar file by hand 
+https://medium.com/javarevisited/back-to-the-basics-of-java-part-2-the-jar-6e923685d571
+
 - Compile all java classes to new directory (ex. target\):
   
 javac path\to\java\Class.java path\to\another\Class.java -d target\
