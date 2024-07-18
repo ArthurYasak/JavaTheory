@@ -30,6 +30,9 @@ services:
       KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
 ```
 LISTENERS are what interfaces Kafka binds to. ADVERTISED_LISTENERS are how clients can connect.
+
+![Kafka_in_docker](https://github.com/ArthurYasak/JavaTheory/blob/d31055b4614c52f1e1b2571e7b95d0b36eac4293/images/kafka/Kafka_in_docker.png)
+
 ### On application.properties:
 ```properties
 spring.kafka.bootstrap-servers=kafka:19092
