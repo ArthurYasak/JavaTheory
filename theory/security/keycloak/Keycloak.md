@@ -11,7 +11,7 @@ Keycloak flow:
 How to add keycloak in java-project:
 
 In pom.xml:
-
+```xml
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
@@ -26,9 +26,9 @@ In pom.xml:
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-security</artifactId>
     </dependency>
-
+```
 In application.yaml: 
-
+```yaml
     server:
       port: 7000
     
@@ -61,9 +61,9 @@ In application.yaml:
             jwt:
               jwk-set-uri: "http://keycloak:8180/realms/factoring/protocol/openid-connect/certs"
               issuer-uri: ${issuer-uri}
-
+```
 Configuration class (but in my case server works without this class):
-
+```java
     @EnableWebSecurity
     @Configuration
     public class ClientVerificationSecurityConfig {
@@ -95,7 +95,7 @@ Configuration class (but in my case server works without this class):
             return JwtDecoders.fromIssuerLocation(issuerUrl);
         }
     }
-
+```
 Send request with Postman:
 
 ![Keycloak_with_postman](https://github.com/ArthurYasak/JavaTheory/blob/main/images/Keycloak_with_postman.png)
