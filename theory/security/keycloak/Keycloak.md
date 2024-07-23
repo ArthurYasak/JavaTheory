@@ -1,7 +1,7 @@
 Start keycloak server on Windows (keycloak bin folder added to Path):
-
+```cmd
     kc.bat start-dev --http-port 8180
-
+```
 Keycloak flow:
 
 ![Keycloak_flow](https://github.com/ArthurYasak/JavaTheory/raw/main/images/Keycloak_flow.png)
