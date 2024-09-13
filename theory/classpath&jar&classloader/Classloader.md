@@ -23,7 +23,7 @@ https://javarush.com/groups/posts/646-kak-proiskhodit-zagruzka-klassov-v-jvm
 В Java существует три стандартных загрузчика, каждый из которых осуществляет загрузку класса из определенного места:
 - Bootstrap – базовый загрузчик, также называется Primordial ClassLoader.
 
-загружает стандартные классы JDK из архива rt.jar
+загружает стандартные классы JDK из архива rt.jar, загружает основные библиотеки Java, расположенные в папке <JAVA_HOME>/jre/lib
 
 - Platform (Extension) ClassLoader – загрузчик расширений.
 
