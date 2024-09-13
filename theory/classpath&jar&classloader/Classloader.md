@@ -17,6 +17,7 @@ https://javarush.com/groups/posts/646-kak-proiskhodit-zagruzka-klassov-v-jvm
 3. инициализация полученного объекта
 
 ![Loading](https://github.com/ArthurYasak/JavaTheory/blob/3c7933f4e7cca00ea7003ae1442bc78ed4ea004f/images/classpath%26jar%26classloader/Loading.png)
+Источник: https://medium.com/@wakefulinsomnia/how-does-java-classloader-system-work-82eaf378f73b
 
 ### Типы загрузчиков Java
 В Java существует три стандартных загрузчика, каждый из которых осуществляет загрузку класса из определенного места:
