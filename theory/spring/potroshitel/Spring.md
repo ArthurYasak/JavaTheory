@@ -1,3 +1,7 @@
+##Трехфазовый конструктор
+![three_phase_constructor]
+(https://github.com/ArthurYasak/JavaTheory/blob/7585d53eaa1a304023a58d1b9be17e2d2ca61b70/images/spring/potroshitel/three_phase_constructor.png)
+
 ## BeanFactoryPostProcessor
 ![Bean_factory_post_processor](https://github.com/ArthurYasak/JavaTheory/blob/df875412ad0f6571b353a4e24ce49057840642d9/images/spring/potroshitel/Bean_factory_post_processor.png)
 
