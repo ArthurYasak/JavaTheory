@@ -12,3 +12,7 @@
 DispatcherServlet - полностью интегрированный в IoC - контейнер объект, т.е. разработчику не требуется определять его самостоятельно, а требуется лишь настроить.
 
 ![Front_Controller.png](https://github.com/ArthurYasak/JavaTheory/blob/d8df50dc9c538041bd43f7443fb1320a9bb82415/images/spring/skillbox/FrontController.PNG)
+
+## web-config.xml
+```<context:component-scan base-package="org.example"/>``` - тег, по которому контейнер инверсии контроля будет сканировать пакеты, предоставленные в атрибуте, на наличие бинов.
+```<mvc:default-servlet-handler/>``` - захватывает все послупающие запросы и возвр-ет http-шаблоны в связке с ViewResolver
